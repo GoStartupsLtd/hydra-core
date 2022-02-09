@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: true
-          depth: 0
+          fetch-dept: 0
       -
         name: Build and execute tests
         run: |
@@ -19,7 +19,3 @@ jobs:
           ./configure --without-gui BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include"
           make
           make checks
-
-
-
-        
