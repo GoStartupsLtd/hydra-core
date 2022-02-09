@@ -3,7 +3,7 @@ on:
   push:
     branches: ['hydra']
 jobs:
-  build_hydra:
+  build:
     runs-on: ubuntu-20.04
     steps:
       -
